@@ -1,0 +1,678 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.link {
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  padding: 0px 8px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  line-height: 1.5;
+}
+
+.link:hover {
+  background: #feb64d;
+  color: #000;
+}
+
+.social-link {
+  background-color: #5f5f5f;
+  border-radius: 100%;
+  width: 34px;
+  height: 34px;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px !important;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #feb64d;
+  color: #000;
+}
+
+.img-pos {
+  left: 5px;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 1rem;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+.desktop-btn {
+  display: block;
+}
+
+.disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 1169px) {
+  .vertical-timeline-element-icon {
+    margin-left: 6px !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .desktop-btn {
+    display: none;
+  }
+}
+
+.inside-image {
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  box-shadow: -1px 3px 11px -4px rgba(0, 0, 0, 0.75);
+}
+
+.roadmap-heading {
+  color: #fff !important;
+  margin-bottom: 10px;
+}
+
+.jumptarget:before {
+  content: '';
+  width: 100%;
+  display: block;
+  height: 100px;
+  margin: -50px 0 0;
+}
+
+.numbers-main {
+  padding: 21px 60px 45px 50px;
+}
+
+.story::before {
+  content: '';
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: #ffa928;
+  border-radius: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.story.white::before {
+  background-color: #fff;
+}
+
+.marquee-item {
+  width: 180px;
+  height: auto;
+  display: -ms-inline-flexbox;
+  display: inline-block;
+  margin: 0 5px;
+  transition: all 0.2s ease-out;
+  border: 2px solid #343337;
+  padding: 8px;
+  max-width: 180px;
+}
+
+.slick-slide {
+  max-width: 180px;
+}
+
+.rarity-info {
+  box-shadow: 0 4px 0 #ffa928;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 115px;
+  padding: 60px 0 110px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 160px;
+  background: url('./assets/roadmap.png');
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.time-container {
+  padding: 0 110px 0 20px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+  padding: 0 20px 0 110px;
+}
+
+.time-content {
+  padding: 10px 20px;
+  background-color: #341f0a;
+  position: relative;
+  border-radius: 5px;
+  border: 4px solid #f5c90c;
+}
+
+.milestones-title {
+  color: #f5c90c;
+  font-weight: 700;
+  font-size: 28px !important;
+  text-transform: uppercase !important;
+}
+
+.time-content p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+  border-top: 1px solid #725d48;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.left:before,
+.right:before {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+}
+
+.left:before {
+  right: 86px;
+  border: solid transparent;
+  border-left: solid #f5c90c;
+  border-width: 24px 0 24px 24px;
+}
+
+.left:after {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+}
+
+.right:before {
+  left: 86px;
+  border: solid transparent;
+  border-right: solid #fe8700;
+  border-width: 24px 24px 24px 0;
+}
+
+.right:after {
+  left: -25px;
+}
+
+.time-container:after {
+  content: '';
+  position: absolute;
+  width: 86px;
+  height: 90px;
+  right: -25px;
+  background: url(./assets/milestone-1-img.png) no-repeat;
+  top: 15px;
+  z-index: 1;
+}
+
+.right.two:before {
+  border: solid transparent;
+  border-right: solid #fe8700;
+  border-width: 24px 24px 24px 0;
+}
+
+.right.two .time-content {
+  border: 4px solid #fe8700;
+}
+
+.right.two .milestones-title {
+  color: #fe8700;
+}
+
+.right.two:after {
+  background: url(./assets/milestone-2-img.png) no-repeat;
+}
+.right.three:before {
+  border: solid transparent;
+  border-right: solid #eb314e;
+  border-width: 24px 24px 24px 0;
+}
+
+.right.three .time-content {
+  border: 4px solid #eb314e;
+}
+
+.right.three .milestones-title {
+  color: #eb314e;
+}
+
+.right.three:after {
+  background: url(./assets/milestone-4-img.png) no-repeat;
+}
+.right.four:before {
+  border: solid transparent;
+  border-right: solid #00abff;
+  border-width: 24px 24px 24px 0;
+}
+
+.right.four .time-content {
+  border: 4px solid #00abff;
+}
+
+.right.four .milestones-title {
+  color: #00abff;
+}
+
+.right.four:after {
+  background: url(./assets/milestone-6-img.png) no-repeat;
+}
+
+.right.five:before {
+  border: solid transparent;
+  border-right: solid #c45bff;
+  border-width: 24px 24px 24px 0;
+}
+
+.right.five .time-content {
+  border: 4px solid #c45bff;
+}
+
+.right.five .milestones-title {
+  color: #c45bff;
+}
+
+.right.four:after {
+  background: url(./assets/milestone-8-img.png) no-repeat;
+}
+
+.left.two .time-content {
+  border: 4px solid #b7ff46;
+}
+
+.left.two .milestones-title {
+  color: #b7ff46;
+}
+
+.left.two:before {
+  border: solid transparent;
+  border-left: solid #b7ff46;
+  border-width: 24px 0 24px 24px;
+}
+
+.left.two:after {
+  background: url(./assets/milestone-3-img.png) no-repeat;
+}
+
+.left.three .time-content {
+  border: 4px solid #ffb6d1;
+}
+
+.left.three .milestones-title {
+  color: #ffb6d1;
+}
+
+.left.three:before {
+  border: solid transparent;
+  border-left: solid #ffb6d1;
+  border-width: 24px 0 24px 24px;
+}
+
+.left.three:after {
+  background: url(./assets/milestone-5-img.png) no-repeat;
+}
+
+.left.four .time-content {
+  border: 4px solid #00fff9;
+}
+
+.left.four .milestones-title {
+  color: #00fff9;
+}
+
+.left.four:before {
+  border: solid transparent;
+  border-left: solid #00fff9;
+  border-width: 24px 0 24px 24px;
+}
+
+.left.four:after {
+  background: url(./assets/milestone-7-img.png) no-repeat;
+}
+
+.faq {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.faq .faq-heading {
+  transition: all 0.5s ease-in-out;
+  color: #cfcfcf;
+}
+
+.faq .faq-heading.open {
+  color: #ffbb28 !important;
+}
+
+.faq .faq-body {
+  transition: all 5s ease-in-out;
+  display: none;
+}
+
+.faq .faq-body.open {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .numbers-main {
+    padding: 20px 20px 30px;
+  }
+
+  .story::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rarity-para {
+    background-color: hsla(0, 0%, 100%, 0.5);
+    padding: 6px;
+  }
+
+  .timeline {
+    margin-top: 36px;
+    padding: 0 10px;
+  }
+
+  .timeline:after {
+    left: 31px;
+  }
+
+  .time-container {
+    width: 100%;
+    padding-left: 117px;
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+  .time-container:before {
+    left: 60px;
+    border: solid transparent;
+    border-right: solid #fff;
+    border-width: 10px 10px 10px 0;
+  }
+
+  .left:after,
+  .right:after {
+    left: 18px;
+  }
+
+  .right {
+    left: 0;
+  }
+}
+.homeHeader {
+  font-size: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: black;
+}
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 85px;
+  margin-top: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.contet {
+  background: #f92f2f;
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+}
+.lftlft {
+  position: relative;
+  top: -31%;
+}
+.metamon {
+  color: #00abff;
+  margin-bottom: 34px;
+  padding: 0;
+  font-size: 50px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+.metamonWrapper {
+  background: #ffbb28;
+  padding: 80px 0 40px;
+  margin-bottom: 50px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('./assets/Picture1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.metamonInner {
+  max-width: 1140px;
+  margin: auto;
+}
+.metamonInner h3 {
+  font-size: 34px;
+  font-family: 'Montserrat';
+  color: #ffbb28;
+}
+.metamonInner p {
+  font-size: 22px;
+  color: #e8f4f9;
+}
+.imgss {
+  float: left;
+  margin: 5px;
+}
+.overl {
+  text-align: justify;
+}
+.gameInner {
+  background-image: url('./assets/fetaturebg.jpg');
+  padding: 100px 0 50px;
+}
+.gameWrapper {
+  max-width: 1140px;
+  margin: auto;
+}
+.gameHeading {
+  font-size: 50px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #fff;
+}
+.ggmD {
+  display: flex;
+}
+.gameImg {
+  width: 55%;
+  height: 150px;
+}
+.gameInnerContentHeading {
+  font-size: 34px;
+  font-family: 'Montserrat';
+  color: #ffbb28;
+}
+.rightRight {
+  padding-left: 40px;
+  padding-top: 30px;
+}
+.rightRight p {
+  font-size: 22px;
+  color: #e8f4f9;
+}
+.gameContent {
+  padding-top: 100px;
+}
+.gameContent p {
+  font-size: 22px;
+  color: #e8f4f9;
+}
+@media screen and (max-width: 1100px) {
+  .metamonInner {
+    max-width: 90%;
+    margin: auto;
+  }
+  .ggmD {
+    flex-direction: column;
+  }
+  .gameImg {
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 90px;
+  }
+  .rightRight {
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+  .gameImg img {
+    height: 250px;
+  }
+  .gameContent {
+    padding-top: 40px;
+  }
+  .gameContent p {
+    font-size: 20px;
+  }
+  .rightRight p {
+    font-size: 20px;
+  }
+  .gameInnerContentHeading {
+    font-size: 31px;
+  }
+  .gameHeading {
+    font-size: 40px;
+  }
+  .metamonInner h3 {
+    font-size: 31px;
+  }
+  .metamonInner p {
+    font-size: 20px;
+  }
+  .metamon {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .animate-charcter {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .gameContent p {
+    font-size: 18px;
+  }
+  .rightRight p {
+    font-size: 18px;
+  }
+  .gameInnerContentHeading {
+    font-size: 28px;
+  }
+  .gameHeading {
+    font-size: 35px;
+  }
+  .metamonInner h3 {
+    font-size: 28px;
+  }
+  .metamonInner p {
+    font-size: 18px;
+  }
+  .metamon {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .animate-charcter {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .gameContent p {
+    font-size: 16px;
+  }
+  .rightRight p {
+    font-size: 16px;
+  }
+  .gameInnerContentHeading {
+    font-size: 25px;
+  }
+  .gameHeading {
+    font-size: 30px;
+  }
+  .metamonInner h3 {
+    font-size: 25px;
+  }
+  .metamonInner p {
+    font-size: 16px;
+  }
+  .metamon {
+    font-size: 30px;
+  }
+}
