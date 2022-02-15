@@ -18,14 +18,14 @@ const Icon =
 export default function About() {
   return (
     <>
-      <div className="homeHeader">
+      {/* <div className="homeHeader">
         <h3 class="animate-charcter"> Join The Cheetah Gang</h3>
       </div>
       <div>
         <h6 className="contet">
           Enter the amount of cheetah you would like to purchase...
         </h6>
-      </div>
+      </div> */}
       <Box bg="white" id="about" py="60px" className="jumptarget">
         <Flex
           flexDirection={{ base: 'column', md: 'row' }}
